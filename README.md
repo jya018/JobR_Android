@@ -60,8 +60,8 @@
 ## ⚒   Project Architecture
 
 > System Architecture
-<img width="1335" alt="스크린샷 2020-06-14 오후 10 49 21" src="https://user-images.githubusercontent.com/55496667/123369788-68de5780-d5b9-11eb-8ecc-27254e7ddca1.png">
-<img width="1335" alt="스크린샷 2020-06-14 오후 10 49 21" src="https://user-images.githubusercontent.com/55496667/123369814-75fb4680-d5b9-11eb-95ec-80d60e6ec514.png">
+<img width="854" alt="스크린샷 2020-06-14 오후 10 49 21" src="https://user-images.githubusercontent.com/55496667/123369788-68de5780-d5b9-11eb-8ecc-27254e7ddca1.png">
+<img width="854" alt="스크린샷 2020-06-14 오후 10 49 21" src="https://user-images.githubusercontent.com/55496667/123369814-75fb4680-d5b9-11eb-95ec-80d60e6ec514.png">
 
 > DB Architecture
 
