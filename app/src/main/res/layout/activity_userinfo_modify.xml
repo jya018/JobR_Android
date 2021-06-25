@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="13dp"
+    android:background="#222222"
+    tools:context=".UserInfoModifyActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/enrollInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#222222"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="1dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="640dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:textSize="18dp"
+                android:text="JobR 가입정보"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text="ID" />
+
+                <TextView
+                    android:id="@+id/idContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="64dp"
+                    android:textSize="18dp"
+                    android:hint="dygks302"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text="E-mail" />
+
+                <TextView
+                    android:id="@+id/emailContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="yh402@jobr.com"
+                    android:textSize="18dp"
+                    android:layout_marginLeft="30dp"
+                    android:padding="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text="Nickname" />
+
+                <EditText
+                    android:id="@+id/nicknameContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="멋져부러"
+                    android:textSize="18dp"
+                    android:padding="10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="9dp"
+                    android:text="직업구분"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/jobSortSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginLeft="19dp"
+                    android:entries="@array/jobSortArray"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/reviseSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbutton"
+        android:text="수정하기"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/black" />
+
+</LinearLayout>

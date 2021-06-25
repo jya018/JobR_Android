@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="jobSortArray">
+        <item>취준생</item>
+        <item>회사원</item>
+    </string-array>
+</resources>

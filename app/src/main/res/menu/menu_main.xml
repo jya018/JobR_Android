@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="즐겨찾는 게시판">
+        <menu>
+            <group android:id="@+id/즐겨찾기"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/공지사항"
+                    android:icon="@drawable/board"
+                    android:title="공지사항" />
+                <item
+                    android:id="@+id/전체게시글"
+                    android:icon="@drawable/allboard"
+                    android:title="전체 게시글" />
+                <item
+                    android:id="@+id/베스트게시글"
+                    android:icon="@drawable/best"
+                    android:title="베스트 게시글" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="회사정보">
+        <menu>
+            <group android:id="@+id/회사정보"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/기업정보"
+                    android:icon="@drawable/company"
+
+                    android:title="기업정보" />
+                <item
+                    android:id="@+id/채용정보"
+                    android:icon="@drawable/recruit"
+
+                    android:title="채용정보" />
+                <item
+                    android:id="@+id/이직정보"
+                    android:icon="@drawable/change"
+                    android:title="이직정보" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="취업 선배들의 정보">
+        <menu>
+            <group android:id="@+id/취업선배"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/취업선배스펙"
+                    android:icon="@drawable/spec"
+                    android:title="취업선배 스펙" />
+                <item
+                    android:id="@+id/면접후기"
+                    android:icon="@drawable/review"
+                    android:title="면접후기" />
+                <item
+                    android:id="@+id/합격비법"
+                    android:icon="@drawable/tip"
+                    android:title="합격비법" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="자기개발">
+        <menu>
+            <group android:id="@+id/자기개발"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/자기소개서첨삭"
+                    android:icon="@drawable/introduce"
+                    android:title="자기소개서 첨삭" />
+                <item
+                    android:id="@+id/평균스펙제공"
+                    android:icon="@drawable/avgspec"
+                    android:title="평균스펙 제공" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="커뮤니티">
+        <menu>
+            <group android:id="@+id/커뮤니티"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/자유게시판"
+                    android:icon="@drawable/freeboard"
+                    android:title="자유게시판" />
+                <item
+                    android:id="@+id/질문답변"
+                    android:icon="@drawable/qna"
+                    android:title="질문/답변" />
+                <item
+                    android:id="@+id/고민상담"
+                    android:icon="@drawable/consult"
+                    android:title="고민/상담" />
+                <item
+                    android:id="@+id/유머방"
+                    android:icon="@drawable/humor"
+                    android:title="유머방" />
+                <item
+                    android:id="@+id/이것이알고싶다"
+                    android:icon="@drawable/feedback"
+                    android:title="이것이 알고싶다." />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="설정">
+        <menu>
+            <group android:id="@+id/설정"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/마이페이지"
+                    android:icon="@drawable/userinfo"
+                    android:title="마이페이지" />
+            </group>
+        </menu>
+    </item>
+
+
+</menu>

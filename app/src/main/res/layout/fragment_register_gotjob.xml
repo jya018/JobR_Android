@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:title="직장인버전"
+    android:padding="13dp"
+    android:background="#222222"
+    tools:context=".NewEmployActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#222222">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#222222"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardBackgroundColor="#222222"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="1dp"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="25dp"
+                        android:textSize="18dp"
+                        android:text="JobR 회원가입"
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/required"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="top"
+                            app:srcCompat="@drawable/required1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:textSize="18dp"
+                            android:text="ID"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/idwrite"
+                            android:layout_width="268dp"
+                            android:layout_height="wrap_content"
+                            android:hint="ID를 입력해주세요."
+                            android:padding="13dp"
+                            android:backgroundTint="@color/black"/>
+                        <Button
+                            android:id="@+id/dupcheck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/roundbutton"
+                            android:text="중복확인"
+                            android:textColor="@color/white"
+                            app:backgroundTint="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="top"
+                            app:srcCompat="@drawable/required1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:textSize="18dp"
+                            android:text="Password"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/passwordwrite"
+                            android:layout_width="268dp"
+                            android:layout_height="wrap_content"
+                            android:inputType="textPassword"
+                            android:hint="Password를 입력해주세요."
+                            android:padding="13dp"
+                            android:backgroundTint="@color/black"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/password2write"
+                            android:layout_height="wrap_content"
+                            android:layout_width="268dp"
+                            android:hint="Password 확인"
+                            android:inputType="textPassword"
+                            android:padding="13dp"
+                            android:backgroundTint="@color/black"/>
+                        <Button
+                            android:id="@+id/passwordcheck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/roundbutton"
+                            android:text="일치체크"
+                            android:textColor="@color/white"
+                            app:backgroundTint="@color/black" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="top"
+                            app:srcCompat="@drawable/required1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:textSize="18dp"
+                            android:text="E-mail"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/emailwrite"
+                            android:layout_width="268dp"
+                            android:layout_height="wrap_content"
+                            android:hint="E-mail을 입력해주세요."
+                            android:padding="13dp"
+                            android:backgroundTint="@color/black"/>
+                        <Button
+                            android:id="@+id/sendmail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/roundbutton"
+                            android:text="메일발송"
+                            android:textColor="@color/white"
+                            app:backgroundTint="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/codecheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:visibility="gone"
+                        android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/codewrite"
+                            android:layout_width="268dp"
+                            android:layout_height="wrap_content"
+                            android:hint="인증번호를 입력해주세요."
+                            android:padding="13dp"
+                            android:backgroundTint="@color/black"/>
+                        <Button
+                            android:id="@+id/certificate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/roundbutton"
+                            android:text="인증하기"
+                            android:textColor="@color/white"
+                            app:backgroundTint="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="top"
+                            app:srcCompat="@drawable/required1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:textSize="18dp"
+                            android:text="Nickname"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/nicknamewrite"
+                            android:layout_width="268dp"
+                            android:layout_height="wrap_content"
+                            android:hint="Nickname을 입력해주세요."
+                            android:padding="13dp"
+                            android:backgroundTint="@color/black"/>
+
+                        <Button
+                            android:id="@+id/dupcheck2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/roundbutton"
+                            android:text="중복확인"
+                            android:textColor="@color/white"
+                            app:backgroundTint="@color/black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="top"
+                            app:srcCompat="@drawable/required1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:textSize="18dp"
+                            android:text="Company"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spinner"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:spinnerMode="dialog"
+                            android:entries="@array/companyArray"/>
+
+                        <EditText
+                            android:id="@+id/companynamewrite"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="회사명 직접입력"
+                            android:padding="13dp"
+                            android:backgroundTint="@color/black"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:textSize="18dp"
+                            android:layout_marginLeft="14dp"
+                            android:text="TOEIC"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/toeicwrite"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="TOEIC 점수"
+                            android:padding="13dp"
+                            android:backgroundTint="@color/black"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:textSize="18dp"
+                            android:layout_marginLeft="14dp"
+                            android:text="TOEFL"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/toeflwrite"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="TOEFL 점수"
+                            android:padding="13dp"
+                            android:backgroundTint="@color/black"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:textSize="18dp"
+                            android:layout_marginLeft="14dp"
+                            android:text="TEPS"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/tepswrite"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="TEPS 점수"
+                            android:padding="13dp"
+                            android:backgroundTint="@color/black"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:textSize="18dp"
+                            android:layout_marginLeft="14dp"
+                            android:text="OPIC"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp"
+                            android:layout_marginRight="5dp"
+                            android:textSize="11dp"
+                            android:text="(NL:1 NM:2 NH:3 IL:4 IM1:5 IM2:6 IM3:7 IH:8 AL:9)"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/opicwrite"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="OPIC 등급을 숫자로 입력해주세요."
+                            android:padding="13dp"
+                            android:backgroundTint="@color/black"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:textSize="18dp"
+                            android:layout_marginLeft="14dp"
+                            android:text="ToeicSpeaking"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/toswrite"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="ToeicSpeaking Level"
+                            android:padding="13dp"
+                            android:backgroundTint="@color/black"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:textSize="18dp"
+                            android:layout_marginLeft="14dp"
+                            android:text="Internship"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <RadioGroup android:id="@+id/radioGroup"
+                            android:orientation="horizontal"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <RadioButton
+                                android:id="@+id/internbutton1"
+                                android:layout_width="154dp"
+                                android:layout_height="45dp"
+                                android:text="O"
+                                android:background="@drawable/button_custom"
+                                android:textColor="@color/white"
+                                android:backgroundTint="@color/black"
+                                android:buttonTint="@color/teal_200"/>
+                            <RadioButton
+                                android:id="@+id/internbutton2"
+                                android:layout_width="154dp"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="10dp"
+                                android:text="X"
+                                android:background="@drawable/button_custom"
+                                android:textColor="@color/white"
+                                android:backgroundTint="@color/black"
+                                android:buttonTint="@color/teal_200"/>
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:textSize="18dp"
+                            android:layout_marginLeft="14dp"
+                            android:text="Degree"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/schoolwrite"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="출신 대학명을 입력해주세요."
+                            android:padding="13dp"
+                            android:backgroundTint="@color/black"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_gravity="top"
+                            app:srcCompat="@drawable/required1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:textSize="18dp"
+                            android:text="GPA(평균평점)"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/scorewrite"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="평균평점을 입력해주세요."
+                            android:padding="13dp"
+                            android:backgroundTint="@color/black"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#222222"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/registerbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundbutton"
+            android:text="회원가입하기"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/black" />
+    </LinearLayout>
+</LinearLayout>

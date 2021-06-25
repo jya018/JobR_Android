@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/메인화면">
+
+    <fragment
+        android:id="@+id/메인화면"
+        android:name="com.capstone.JobR.category.main.MainFragment"
+        android:label=""
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_메인화면_to_공지사항"
+            app:destination="@id/공지사항"
+            app:enterAnim="@anim/fragment_close_enter"
+            app:exitAnim="@anim/fragment_close_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit"
+            app:popUpTo="@id/공지사항"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_메인화면_to_평균스펙제공"
+            app:destination="@id/평균스펙제공"
+            app:popUpTo="@id/평균스펙제공"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/fragment_close_enter"
+            app:exitAnim="@anim/fragment_close_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+        <action
+            android:id="@+id/action_메인화면_to_자기소개서첨삭"
+            app:destination="@id/자기소개서첨삭"
+            app:popUpTo="@id/자기소개서첨삭"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/fragment_close_enter"
+            app:exitAnim="@anim/fragment_close_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+        <action
+            android:id="@+id/action_메인화면_to_유머방"
+            app:destination="@id/유머방"
+            app:enterAnim="@anim/fragment_close_enter"
+            app:exitAnim="@anim/fragment_close_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit"
+            app:popUpTo="@id/유머방"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_메인화면_to_자유게시판"
+            app:destination="@id/자유게시판"
+            app:enterAnim="@anim/fragment_close_enter"
+            app:exitAnim="@anim/fragment_close_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit"
+            app:popUpTo="@id/자유게시판"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_메인화면_to_고민상담"
+            app:destination="@id/고민상담"
+            app:popUpTo="@id/고민상담"
+            app:popUpToInclusive="true"
+            app:enterAnim="@anim/fragment_close_enter"
+            app:exitAnim="@anim/fragment_close_exit"
+            app:popEnterAnim="@anim/fragment_close_enter"
+            app:popExitAnim="@anim/fragment_close_exit" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/공지사항"
+        android:name="com.capstone.JobR.category.notice.NoticeFragment"
+        android:label=""
+        tools:layout="@layout/fragment_board_list" />
+
+    <fragment
+        android:id="@+id/전체게시글"
+        android:name="com.capstone.JobR.category.allboard.AllBoardFragment"
+        android:label=""
+        tools:layout="@layout/fragment_board_list" />
+
+    <fragment
+        android:id="@+id/베스트게시글"
+        android:name="com.capstone.JobR.category.bestboard.BestBoardFragment"
+        android:label=""
+        tools:layout="@layout/fragment_board_list" />
+
+    <fragment
+        android:id="@+id/기업정보"
+        android:name="com.capstone.JobR.category.company.CompanyFragment"
+        android:label=""
+        tools:layout="@layout/fragment_company" />
+
+    <fragment
+        android:id="@+id/채용정보"
+        android:name="com.capstone.JobR.category.recruit.RecruitFragment"
+        android:label=""
+        tools:layout="@layout/fragment_board_list" />
+
+    <fragment
+        android:id="@+id/이직정보"
+        android:name="com.capstone.JobR.category.change.ChangeFragment"
+        android:label=""
+        tools:layout="@layout/fragment_board_list" />
+
+    <fragment
+        android:id="@+id/취업선배스펙"
+        android:name="com.capstone.JobR.category.spec.SpecFragment"
+        android:label=""
+        tools:layout="@layout/fragment_spec" />
+
+    <fragment
+        android:id="@+id/면접후기"
+        android:name="com.capstone.JobR.category.review.ReviewFragment"
+        android:label=""
+        tools:layout="@layout/fragment_board_list" />
+
+    <fragment
+        android:id="@+id/합격비법"
+        android:name="com.capstone.JobR.category.tip.TipFragment"
+        android:label=""
+        tools:layout="@layout/fragment_board_list" />
+
+
+    <fragment
+        android:id="@+id/자기소개서첨삭"
+        android:name="com.capstone.JobR.category.introduce.IntroduceFragment"
+        android:label=""
+        tools:layout="@layout/fragment_board_list" />
+
+    <fragment
+        android:id="@+id/평균스펙제공"
+        android:name="com.capstone.JobR.category.avgspec.AvgSpecFragment"
+        android:label=""
+        tools:layout="@layout/fragment_avgspec" />
+
+    <fragment
+        android:id="@+id/자유게시판"
+        android:name="com.capstone.JobR.category.freeboard.FreeBoardFragment"
+        android:label=""
+        tools:layout="@layout/fragment_board_list" />
+
+    <fragment
+        android:id="@+id/질문답변"
+        android:name="com.capstone.JobR.category.qna.QnaFragment"
+        android:label=""
+        tools:layout="@layout/fragment_board_list" />
+
+    <fragment
+        android:id="@+id/고민상담"
+        android:name="com.capstone.JobR.category.consult.ConsultFragment"
+        android:label=""
+        tools:layout="@layout/fragment_board_list" />
+
+    <fragment
+        android:id="@+id/유머방"
+        android:name="com.capstone.JobR.category.humor.HumorFragment"
+        android:label=""
+        tools:layout="@layout/fragment_board_list" />
+
+    <fragment
+        android:id="@+id/이것이알고싶다"
+        android:name="com.capstone.JobR.category.feedback.FeedbackFragment"
+        android:label=""
+        tools:layout="@layout/fragment_board_list" />
+
+    <fragment
+        android:id="@+id/마이페이지"
+        android:name="com.capstone.JobR.category.userInfo.UserInfoFragment"
+        android:label=""
+        tools:layout="@layout/fragment_userinfo" />
+
+
+</navigation>

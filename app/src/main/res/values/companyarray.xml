@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="companyArray">
+        <item>직접입력</item>
+        <item>삼성전자</item>
+        <item>엘지전자</item>
+        <item>네이버</item>
+        <item>카카오</item>
+        <item>NCSOFT</item>
+        <item>삼성전자</item>
+        <item>엘지전자</item>
+        <item>네이버</item>
+        <item>카카오</item>
+        <item>NCSOFT</item>
+        <item>삼성전자</item>
+        <item>엘지전자</item>
+        <item>네이버</item>
+        <item>카카오</item>
+        <item>NCSOFT</item>
+        <item>삼성전자</item>
+        <item>엘지전자</item>
+        <item>네이버</item>
+        <item>카카오</item>
+        <item>NCSOFT</item>
+        <item>삼성전자</item>
+        <item>엘지전자</item>
+        <item>네이버</item>
+        <item>카카오</item>
+        <item>NCSOFT</item>
+        <item>삼성전자</item>
+        <item>엘지전자</item>
+        <item>네이버</item>
+        <item>카카오</item>
+        <item>NCSOFT</item>
+    </string-array>
+</resources>

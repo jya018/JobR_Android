@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:title="취준생버전"
+    android:padding="13dp"
+    android:background="#222222"
+    tools:context=".NewStudentActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#222222"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="1dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="580dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:textSize="18dp"
+                android:text="JobR 회원가입"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/required"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="top"
+                    app:srcCompat="@drawable/required1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text="ID" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/idwrite"
+                    android:layout_width="267dp"
+                    android:layout_height="wrap_content"
+                    android:hint="ID를 입력해주세요."
+                    android:padding="13dp"
+                    android:backgroundTint="@color/black"/>
+                <Button
+                    android:id="@+id/dupidcheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundbutton"
+                    android:text="중복확인"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="top"
+                    app:srcCompat="@drawable/required1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text="Password" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/passwordwrite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password를 입력해주세요."
+                    android:inputType="textPassword"
+                    android:padding="13dp"
+                    android:backgroundTint="@color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/password2write"
+                    android:layout_width="268dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Password 확인"
+                    android:inputType="textPassword"
+                    android:padding="13dp"
+                    android:backgroundTint="@color/black"/>
+                <Button
+                    android:id="@+id/passwordcheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundbutton"
+                    android:text="일치체크"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="top"
+                    app:srcCompat="@drawable/required1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text="E-mail" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/emailwrite"
+                    android:layout_width="267dp"
+                    android:layout_height="wrap_content"
+                    android:hint="E-mail을 입력해주세요."
+                    android:padding="13dp"
+                    android:backgroundTint="@color/black"/>
+                <Button
+                    android:id="@+id/sendmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundbutton"
+                    android:text="메일발송"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/codecheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="gone"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/codewrite"
+                    android:layout_width="267dp"
+                    android:layout_height="wrap_content"
+                    android:hint="인증번호를 입력해주세요."
+                    android:padding="13dp"
+                    android:backgroundTint="@color/black"/>
+                <Button
+                    android:id="@+id/certificate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundbutton"
+                    android:text="인증하기"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_gravity="top"
+                    app:srcCompat="@drawable/required1"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text="Nickname" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <EditText
+                    android:id="@+id/nicknamewrite"
+                    android:layout_width="267dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Nickname을 입력해주세요."
+                    android:padding="13dp"
+                    android:backgroundTint="@color/black"/>
+
+                <Button
+                    android:id="@+id/dupnickcheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/roundbutton"
+                    android:text="중복확인"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/black" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/newuserbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/roundbutton"
+        android:text="회원가입하기"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/black" />
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/white">
+
+        <TextView
+            android:ems="5"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:id="@+id/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:padding="3dp"
+            android:text="게시글 제목"
+            android:textSize="15dp"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:ems="10"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:id="@+id/contentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:padding="3dp"
+            android:text="게시글 내용"
+            android:textSize="15dp"
+            android:textColor="#777777" />
+
+        <TextView
+            android:ems="10"
+            android:maxLines="1"
+            android:id="@+id/dateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:padding="3dp"
+            android:text="작성 날짜"
+            android:textSize="10dp"
+            android:textColor="#777777"/>
+    </LinearLayout>
+
+</LinearLayout>
