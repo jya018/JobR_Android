@@ -112,5 +112,5 @@
 
 <br/>  
 
-## 💻 프로젝트 시연 영상
+## 🎬 프로젝트 시연 영상
 [![Video Label](http://img.youtube.com/vi/_eP65T2OfAA/0.jpg)](https://youtu.be/_eP65T2OfAA)
