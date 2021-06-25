@@ -1,5 +1,4 @@
 # 🤔 취업이 알고 싶을 땐 - JobR 
-> Notion: 
 
 <img width="300" alt="스크린샷 2020-06-14 오후 11 02 32" src="https://user-images.githubusercontent.com/55496667/123357549-abe20000-d5a4-11eb-8667-98b45620febb.png">
 
