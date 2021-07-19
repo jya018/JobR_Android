@@ -32,7 +32,7 @@
 ## ️🙋🏻‍♂️팀 구성
   * **안재엽: Project Manager & Server Manager**
 
-    * ` AWS EC2 `, `AWS RDS`, ` Spring Boot `, ` REST API `, `RETROFIT2`, `Graph`, `Open Source`
+    * ` AWS EC2 `, `AWS RDS`, ` Spring Boot `, ` REST API `, `RETROFIT2`, `chart`, `Open Source`
 
   * **이요한: Design Manager & Database Manager**
 
